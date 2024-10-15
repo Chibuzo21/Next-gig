@@ -1,25 +1,18 @@
 import "./App.css";
 
-import Home from "./Pages/Landing/Home";
-
-import Contact from "./Pages/Landing/Contact";
-import About from "./Pages/Landing/About";
-import Freelancers from "./Pages/Landing/Freelancers";
-import Header from "./Components/Header";
-import Employers from "./Pages/Landing/Employers";
-
+import { Route, Routes } from "react-router-dom";
+import Login from "./Pages/Authentication/Login";
+import Register from "./Pages/Authentication/Register";
+import Landing from "./Pages/Landing/Landing";
 function App() {
   return (
     <>
       <main>
-        <Header />
-        <div className="mt-20 overflow-x-hidden">
-          <Home />
-          <Freelancers />
-          <Employers />
-          <About />
-          <Contact />
-        </div>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </main>
     </>
   );
