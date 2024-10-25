@@ -1,15 +1,13 @@
 import React from "react";
-import laptop from "../assets/images/laptop.png";
-import Gradient from "../assets/images/Gradient.png";
-import Frame24 from "../assets/images/Frame 24.png";
-// import Bgcomputer from "../assets/images/laptop.jpeg";
+import laptop from "../../assets/images/laptop.png";
+import Gradient from "../../assets/images/Gradient.png";
+import Frame24 from "../../assets/images/Frame 24.png";
 
 const About = () => {
-<<<<<<< HEAD:src/Pages/About.jsx
   return (
-    <main className="">
-      <section className="h-[120vh] w-full flex flex-col items-center border-[2px] border-blue-400">
-        <section className="h-[20vh] w-[100%] bg-[#062182] flex items-center justify-center">
+    <main>
+      <section className="h-[120vh] w-full flex flex-col items-center ">
+        {/* <section className="h-[20vh] w-[100%] bg-[#062182] flex items-center justify-center">
           {" "}
           <p className="text-white text-xl text-center">
             We focus specifically on junior and intermediate talent, ensuring
@@ -17,7 +15,7 @@ const About = () => {
             user experience, offering a <br /> streamlined process from job
             posting to hiring, backed by strong support.
           </p>
-        </section>
+        </section> */}
         <section className="h-[100vh] flex flex-col  w-[100%] bg-gradient-to-b from-customLight to-customDark ">
           <div className="h-[15vh] flex items-end justify-center">
             <p className="text-black text-3xl font-semibold ">About us</p>
@@ -70,9 +68,6 @@ const About = () => {
       </section>
     </main>
   );
-=======
-  return <main id="about">About</main>;
->>>>>>> main:src/Pages/Landing/About.jsx
 };
 
 export default About;
