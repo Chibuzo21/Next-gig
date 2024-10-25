@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../assets/Frame 12@2x.png";
+import Logo from "../assets/Frame 12@2x..png";
+
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
