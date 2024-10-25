@@ -21,6 +21,9 @@ const Header = () => {
 
   const handleclick = (index) => {
     setActive(index);
+    setTimeout(() => {
+      setToggleMenu(false);
+    }, 600);
   };
   const navClick = (index) => {
     setTimeout(() => {
@@ -115,22 +118,24 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex flex-col  md:hidden font-medium font-nunito w-[90%] text-[22px] ">
-            {["Login", "Register"].map((title, index) => (
-              <a>
-                {" "}
+            {[
+              { name: "Login", link: "/login" },
+              { name: "Register", link: "/register" },
+            ].map((nav, index) => (
+              <NavLink to={`${nav.link}`} key={index}>
                 <button
                   key={index}
                   onClick={() => handleclick(index)}
-                  className={`px-1 py-2 rounded-[15px] mb-6 border-[1px] border-[#062182]
+                  className={`px-3 w-[90%] py-2 rounded-[15px] mb-6 border-[1px] border-[#062182]
              ${
                active === index
                  ? "bg-[#062182] text-white"
                  : "text-[#062182] bg-white "
              }`}
                 >
-                  {title}
+                  {nav.name}
                 </button>
-              </a>
+              </NavLink>
             ))}
           </div>
         </section>
