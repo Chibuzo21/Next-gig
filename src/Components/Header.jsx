@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import Logo from "../assets/Frame 12@2x.png";
+import Logo from "../assets/Frame 12@2x..png";
+
 import { IoMdMenu } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
+
 const Header = () => {
   const [active, setActive] = useState(null);
   const [navActive, setNavActive] = useState(null);

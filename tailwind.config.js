@@ -3,10 +3,14 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        customLight: "#FFFFFF",
+        customDark: "#E6EEFF",
+      },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
