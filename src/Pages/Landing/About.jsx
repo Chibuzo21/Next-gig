@@ -5,6 +5,7 @@ import Frame24 from "../assets/images/Frame 24.png";
 // import Bgcomputer from "../assets/images/laptop.jpeg";
 
 const About = () => {
+<<<<<<< HEAD:src/Pages/About.jsx
   return (
     <main className="">
       <section className="h-[120vh] w-full flex flex-col items-center border-[2px] border-blue-400">
@@ -69,6 +70,9 @@ const About = () => {
       </section>
     </main>
   );
+=======
+  return <main id="about">About</main>;
+>>>>>>> main:src/Pages/Landing/About.jsx
 };
 
 export default About;

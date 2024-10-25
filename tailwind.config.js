@@ -7,7 +7,10 @@ module.exports = {
         customLight: "#FFFFFF",
         customDark: "#E6EEFF",
       },
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
