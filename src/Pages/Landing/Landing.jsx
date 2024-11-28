@@ -5,6 +5,7 @@ import Freelancers from "./Freelancers";
 import About from "./About";
 import Contact from "./Contact";
 import Employers from "./Employers";
+import Footer from "../../Components/Footer";
 
 const Landing = () => {
   return (
@@ -17,6 +18,7 @@ const Landing = () => {
         <About />
         <Contact />
       </div>
+      <Footer />
     </main>
   );
 };
