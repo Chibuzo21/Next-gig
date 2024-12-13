@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState("password");
@@ -29,8 +30,8 @@ const Login = () => {
     >
       {({ isSubmitting }) => (
         <Form>
-          <main className="min-h-screen h-fit md:from-white  bg-gradient-to-b from-white to-[#E6EEFF] w-full flex justify-center flex-col items-center  ">
-            <section className="flex pl-10 justify-center md:items-center md:pl-0  flex-col md:justify-between  mb-6 lg:w-[30%] w-full ">
+          <main className=" main min-h-screen h-fit md:from-white  bg-gradient-to-b from-white to-[#E6EEFF] w-full flex justify-center flex-col items-center  ">
+            <section className="flex w-[80%] justify-center md:items-center md:pl-0  flex-col md:justify-between  mb-6 lg:w-[30%]  ">
               <p className="md:text-[50px] text-[40px] font-nunito font-semibold">
                 Log In
               </p>
@@ -57,7 +58,7 @@ const Login = () => {
                   placeholder="Password"
                   className=" text-sm flex-grow focus:outline-none "
                 />
-                <span onClick={setPasword}>
+                <span onClick={setPasword} className="cursor-pointer">
                   {showPassword ? <IoEyeOutline /> : <IoEyeOffOutline />}
                 </span>
               </div>
@@ -67,15 +68,17 @@ const Login = () => {
                 className="text-red-600 error"
               />
               <section className="flex justify-between w-[100%] items-center mb-20 md:mb-10 ">
-                <div className="flex justify-between  md:w-[30%] w-[42%]">
+                <div className="flex   md:w-[43%] w-[40%] ">
                   <input
                     type="checkbox"
                     className=" w-1/5 border-2 border-[#062182]"
                   />
-                  <p className="text-[#919193] text-sm">Remember Me</p>
+                  <p className="text-[#919193] w-[100%] lg:pl-2 pl-2 md:pl-0 text-sm">
+                    Remember Me
+                  </p>
                 </div>
                 <div>
-                  <p className="text-[#062182] text-sm font-medium">
+                  <p className="text-[#062182] text-sm font-medium cursor-pointer">
                     Forgot password
                   </p>
                 </div>
@@ -105,10 +108,12 @@ const Login = () => {
                 </div>
                 <p className="font-nunito w-[100%] md:w-[100%] text-center text-sm">
                   Don't have an account? Register as a{" "}
-                  <span className="text-[#062182] font-semibold">
-                    {" "}
-                    freelancer
-                  </span>{" "}
+                  <Link to="/register">
+                    <span className="text-[#062182] font-semibold">
+                      {" "}
+                      freelancer
+                    </span>{" "}
+                  </Link>
                   or an{" "}
                   <span className="text-[#062182] font-semibold">employer</span>
                 </p>

@@ -41,20 +41,20 @@ const Header = () => {
 
   return (
     <main
-      className="fixed top-0 h-screen
-    left-0 z-50  "
+      className="fixed top-0   w-screen mb-20 pb-20 
+    left-0 z-40  "
     >
       <section
-        className={`flex  justify-evenly items-center
-         py-8 md:py-4 md:px-2 px-8 w-[100vw] shadow-md 
+        className={`flex  justify-around items-center mb-20 pt-16
+         py-6 md:py-7 md:px-5 px-8 w-[100%] shadow-md 
      ${isOpen ? "bg-[#E6EEFF]" : "bg-white"} md:bg-white `}
       >
         <div>
-          <img src={Logo} alt="" className="md:w-[10vw] w-[43%]" />
+          <img src={Logo} alt="" className="md:w-[10vw] w-[50%]" />
         </div>
         <nav
-          className="md:flex hidden justify-between md:px-5  md:w-[48vw] items-center
-       text-[#A19D9D] text-[16px] "
+          className="md:flex hidden  justify-between md:px-5 md:w-[60%]  lg:w-[52vw] items-center
+       text-[#A19D9D] lg:text-[16px] md:text-[13px] "
         >
           {Nav.map((nav, index) => (
             <a
@@ -71,7 +71,7 @@ const Header = () => {
             </a>
           ))}
         </nav>
-        <div className="md:flex justify-between hidden md:w-[15vw] text-[14px] ">
+        <div className="md:flex md:justify-around  hidden w-[20%] md:text-[13px]  lg:text-[14px] ">
           {[
             { name: "Login", link: "/login" },
             { name: "Register", link: "/register" },
@@ -79,7 +79,7 @@ const Header = () => {
             <NavLink to={`${nav.link}`} key={index}>
               <button
                 onClick={() => handleclick(index)}
-                className={`px-5 py-2 rounded-md border-[1px] border-[#062182]
+                className={`lg:px-5 md:px-3 md:py-1 lg:py-1 rounded-sm lg:rounded-md border-[1px] border-[#062182]
              ${
                active === index
                  ? "bg-[#062182] text-white"

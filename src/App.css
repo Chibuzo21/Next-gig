@@ -1,8 +1,18 @@
 * {
   padding: 0%;
   margin: 0%;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+.Registername {
+  @apply text-lg font-nunito;
+}
+.RegisterInput {
+  @apply border-[#062182] rounded-sm focus:outline-none border-[1px] px-5 py-2 w-[80vw] md:w-[50vw] lg:w-[30vw];
+}
+.main {
+  scroll-margin-top: 60px;
+}

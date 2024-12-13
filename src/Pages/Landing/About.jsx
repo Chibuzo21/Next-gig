@@ -6,7 +6,7 @@ import Frame24 from "../../assets/images/Frame 24.png";
 const About = () => {
   return (
     <main>
-      <section className="h-[120vh] w-full flex flex-col items-center ">
+      <section className=" w-full flex flex-col items-center ">
         {/* <section className="h-[20vh] w-[100%] bg-[#062182] flex items-center justify-center">
           {" "}
           <p className="text-white text-xl text-center">
@@ -16,9 +16,9 @@ const About = () => {
             posting to hiring, backed by strong support.
           </p>
         </section> */}
-        <section className="h-[100vh] flex flex-col  w-[100%] bg-gradient-to-b from-customLight to-customDark ">
-          <div className="h-[15vh] flex items-end justify-center">
-            <p className="text-black text-3xl font-semibold ">About us</p>
+        <section className="h-[110vh] flex flex-col  w-[100%] bg-gradient-to-b from-customLight to-customDark ">
+          <div className=" flex items-end justify-center">
+            <p className="text-black text-3xl font-semibold my-6">About us</p>
           </div>
           <div className="flex justify-center items-center space-x-[40px] h-[85vh] w-full ">
             <img

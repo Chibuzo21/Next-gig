@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <main>
       <Header />
-      <div className="  pt-20 overflow-x-hidden">
+      <div className="  md:pt-16 pt-20  overflow-x-hidden">
         <Home />
         <Freelancers />
         <Employers />

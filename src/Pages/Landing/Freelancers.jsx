@@ -42,23 +42,27 @@ const Freelancers = () => {
     <>
       <main
         id="freelancers"
-        className="bg-gradient-to-b from-[#FFFFFF] to-[#E6EEFF] lg:h-[100%] h-[100%]"
+        className=" main flex 
+      flex-col justify-center items-center   bg-gradient-to-b from-[#FFFFFF] to-[#E6EEFF] lg:h-[100%] h-[100%]"
       >
         <section className="flex flex-col justify-center items-center py-5">
-          <p className="lg:text-2xl text-4xl font-medium">How it works</p>
-          <p className="lg:text-md text-xl">For Freelancers</p>
+          <p className="md:text-2xl text-4xl font-medium">How it works</p>
+          <p className="md:text-md text-xl">For Freelancers</p>
         </section>
 
-        <section className=" flex lg:flex-row flex-col lg:flex-wrap gap-10 lg:h-[130vh] justify-center items-center w-[100%]">
+        <section
+          className=" grid  md:grid-cols-2 lg:grid-cols-3 py-8 h-[100%] md:grid-rows-2  place-items-center 
+       w-[100%] "
+        >
           {Steps.map((step, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b rounded-r-[30px]  relative my-5 w-[80%] py-8 px-4 from-[#FFFFFF] to-[#E9E9E9] 
-              lg:h-[45vh] h-fit lg:w-[25%] lg:py-4 lg:px-4"
+              className="bg-gradient-to-b  rounded-r-[40px] w-[80%] py-8 px-4 my-5
+              relative  from-[#FFFFFF] to-[#E9E9E9]   md:w-[76%] lg:py-5 lg:px-5"
             >
               <img
                 src={step.image}
-                className="lg:w-[4vw] w-[13vw] absolute right-[1%] bottom-[87%]"
+                className="lg:w-[4vw] md:w-[6vw] w-[13vw] absolute right-[1%] bottom-[87%]"
               />
               <p className="font-bold w-[70%] text-lg mb-3">
                 Step {step.num}: {step.title}
